@@ -1,0 +1,20 @@
+{
+  "name": "2021w",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tailwindcss -i src/app.css -o css/styles.css --postcss -w",
+    "prod": "NODE_ENV=production tailwindcss -i src/app.css -o css/styles.css --postcss -w"
+  },
+  "author": "Bence V",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4"
+  }
+}

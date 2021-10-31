@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .wrapper {
+        @apply p-4 mx-auto max-w-screen-sm md:max-w-screen-xl sm:px-8 xl:px-0;
+    }
+
+    .top-bar-li {
+        @apply px-2 opacity-50 text-gray-400 hover:text-green-light hover:opacity-100;
+    }
+
+    .nav-li {
+        @apply my-4 md:my-auto;
+    }
+
+    .nav-href {
+        @apply px-10 py-2 rounded-lg hover:bg-green-light hover:text-white md:px-4;
+    }
+
+    .bottom-nav-btn {
+        @apply w-full bg-green-light text-center z-10 text-white py-1 rounded-sm ring-green-dark ring-1;
+    }
+}
