@@ -4,7 +4,7 @@
 
 @layer components{
     .wrapper {
-        @apply p-4 mx-auto max-w-screen-sm md:max-w-screen-xl sm:px-8 xl:px-0;
+        @apply p-4 mx-auto max-w-screen-sm sm:px-8 md:px-0 md:max-w-screen-xl lg:max-w-screen-2xl 2xl:max-w-none;
     }
 
     .top-bar-li {
@@ -12,14 +12,114 @@
     }
 
     .nav-li {
-        @apply my-4 md:my-auto;
+        @apply my-4 md:pr-2 md:my-auto;
     }
 
     .nav-href {
         @apply px-10 py-2 rounded-lg hover:bg-green-light hover:text-white md:px-4;
     }
 
+    .announcement {
+        @apply flex flex-col md:px-10 md:mt-20 lg:flex-row xl:px-24;
+    }
+
+    .announcement-inner {
+        @apply mt-10 h-48 px-4 md:h-64 md:flex-1 2xl:h-96;
+    }
+
+    .announcement-item {
+        @apply w-8/12 flex flex-col place-items-center justify-between items-start px-2 py-4 sm:py-5 lg:py-4 lg:w-8/12 lg:pl-8 xl:justify-around 2xl:w-6/12;
+    }
+
+    .announcement-heading {
+        @apply font-bold text-sm md:text-xl;
+    }
+
+    .announcement-p {
+        @apply text-xs lg:text-base lg:pr-5 xl:text-lg;
+    }
+
+    .announcement-btn {
+        @apply text-sm px-2 py-1 text-center text-white sm:text-base sm:w-3/4 md:w-1/2 md:px-4 md:py-2 lg:w-3/4;
+    }
+
+    .announcement-img-container {
+        @apply w-4/12 flex place-items-center md:p-5 md:w-6/12 lg:p-0 lg:w-4/12 2xl:w-6/12;
+    }
+
+    .announcement-img {
+        @apply mx-auto;
+    }
+
+
+    .about {
+        @apply mt-12 h-full -mx-4 mb-20 sm:mb-40 sm:-mx-20 md:mx-auto md:my-20 lg:h-screen lg:mb-0;
+    }
+
+    .about-inner-left {
+        @apply flex w-full lg:w-1/2;
+    }
+
+    .about-inner-right {
+        @apply mx-10 grid gap-8 items-center sm:mx-5 lg:grid-rows-3 lg:gap-0 lg:w-8/12 lg:mx-auto;
+    }
+
+    .about-left-heading {
+        @apply text-7xl tracking-tighter font-bold m-auto opacity-20 w-full pl-5 text-white sm:w-auto lg:w-auto lg:-rotate-90 lg:pl-0;
+    }
+
+    .about-right-heading {
+        @apply mt-10 text-center text-lg font-bold lg:text-left lg:leading-tight lg:text-5xl lg:mt-0;
+    }
+
+    .about-p {
+        @apply text-sm text-gray-500 sm:px-8 lg:pl-0 lg:pr-20 2xl:text-lg;
+    }
+
+    .about-bottom {
+        @apply flex flex-col items-center h-full md:flex-row lg:mr-12;
+    }
+
+    .about-bottom-inner {
+        @apply flex flex-row items-center py-5 h-48;
+    }
+
+    .about-bottom-img {
+        @apply h-full mx-auto;
+    }
+
+    .about-text-fix {
+        @apply flex flex-col justify-evenly w-9/12 text-center h-full sm:text-left md:justify-center;
+    }
+
+
+
     .bottom-nav-btn {
         @apply w-full bg-green-light text-center z-10 text-white py-1 rounded-sm ring-green-dark ring-1;
     }
+
+}
+
+.carousel-inner {
+    height: 500px;
+}
+
+.carousel-item {
+    background-image: url('/src/images/lemon_bg.png');
+    background-position: left center;
+    background-size: cover;
+    height: 100%;
+    position: static;
+    opacity: 100;
+}
+
+.about-inner-left {
+    background: url('/src/images/woman-with-fruits.png') no-repeat bottom right/contain;
+    position: static;
+}
+
+@media screen and (min-width: 1920px) {
+    .carousel-inner {
+        height: 600px;
+    } 
 }
