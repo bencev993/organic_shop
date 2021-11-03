@@ -12,14 +12,17 @@ module.exports = {
           medium: '#3498DB'
         },
         gray: {
-          light: '#F8F8F8'
+          light: '#F8F8F8',
+          medium: '#EBEBEB'
         },
         green: {
           light: '#76A713',
           dark: '#1f5c0c',
-          hover: '#8BB538'
+          hover: '#8BB538',
+          pale: '#94BA49'
         },
         orange: {
+          light: '#FD9F13',
           500: '#FF6600'
         },
         salmon: {
@@ -28,6 +31,9 @@ module.exports = {
       },
       inset: {
         '18': '4.5rem'
+      },
+      letterSpacing: {
+        tightest: '-0.1em',
       },
       zIndex: {
         '-10': '-10',

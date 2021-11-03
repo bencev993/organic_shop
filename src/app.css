@@ -24,7 +24,7 @@
     }
 
     .announcement-inner {
-        @apply mt-10 h-48 px-4 md:h-64 md:flex-1 2xl:h-96;
+        @apply mt-10 h-48 px-4 md:h-64 md:flex-1 2xl:h-72;
     }
 
     .announcement-item {
@@ -53,7 +53,7 @@
 
 
     .about {
-        @apply mt-12 h-full -mx-4 mb-20 sm:mb-40 sm:-mx-20 md:mx-auto md:my-20 lg:h-screen lg:mb-0;
+        @apply mt-12 h-full -mx-4 mb-20 sm:-mx-20 md:mx-auto md:my-20 lg:h-screen lg:mb-0;
     }
 
     .about-inner-left {
@@ -69,7 +69,7 @@
     }
 
     .about-right-heading {
-        @apply mt-10 text-center text-lg font-bold lg:text-left lg:leading-tight lg:text-5xl lg:mt-0;
+        @apply mt-10 text-center text-lg font-bold self-baseline lg:text-left lg:leading-tight lg:text-5xl lg:mt-0;
     }
 
     .about-p {
@@ -91,6 +91,55 @@
     .about-text-fix {
         @apply flex flex-col justify-evenly w-9/12 text-center h-full sm:text-left md:justify-center;
     }
+
+    .featured-ul {
+        @apply mb-10 px-8 grid grid-cols-2 gap-5 justify-center text-center font-medium sm:px-0 sm:flex;
+    }
+
+    .featured-href {
+        @apply px-5 py-2 bg-gray-medium hover:bg-green-light hover:text-white;
+    }
+
+    .product-grid {
+        @apply gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+    }
+
+    .product-grid-wrapper {
+        @apply px-10 mb-8 sm:mb-12 md:px-5;
+    }
+
+    .product-container {
+        @apply bg-gray-light h-full flex flex-col place-items-center;
+    }
+
+    .product-img-container {
+        @apply border-green-light border-2 border-b-0 w-full h-3/5 bg-white;
+    }
+
+    .product-img {
+        @apply mx-auto h-full;
+    }
+
+    .product-details {
+        @apply h-2/5 w-full flex flex-col place-items-center;
+    }
+
+    .product-heading {
+        @apply font-extrabold pt-4;
+    }
+
+    .product-price {
+        @apply text-green-pale;
+    }
+
+    .product-rating {
+        @apply text-orange-light text-xs tracking-tightest py-1;
+    }
+
+    .product-btn {
+        @apply text-center text-white uppercase px-3 py-1 m-auto bg-green-light w-2/3 md:w-5/12 lg:w-2/3;
+    }
+
 
 
 
