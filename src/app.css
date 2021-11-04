@@ -40,7 +40,7 @@
     }
 
     .announcement-btn {
-        @apply text-sm px-2 py-1 text-center text-white sm:text-base sm:w-3/4 md:w-1/2 md:px-4 md:py-2 lg:w-3/4;
+        @apply text-sm px-2 py-1 text-center bg-white border-2 hover:bg-orange-500 hover:text-white sm:text-base sm:w-3/4 md:w-1/2 md:px-4 md:py-2 lg:w-3/4;
     }
 
     .announcement-img-container {
@@ -65,7 +65,7 @@
     }
 
     .about-left-heading {
-        @apply text-7xl tracking-tighter font-bold m-auto opacity-20 w-full pl-5 text-white sm:w-auto lg:w-auto lg:-rotate-90 lg:pl-0;
+        @apply text-7xl tracking-tighter font-bold text-black m-auto w-full pl-5 sm:w-auto lg:w-auto lg:-rotate-90 lg:pl-0;
     }
 
     .about-right-heading {
@@ -96,24 +96,20 @@
         @apply mb-10 px-8 grid grid-cols-2 gap-5 justify-center text-center font-medium sm:px-0 sm:flex;
     }
 
-    .featured-href {
-        @apply px-5 py-2 bg-gray-medium hover:bg-green-light hover:text-white;
-    }
-
     .product-grid {
         @apply gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
     }
 
     .product-grid-wrapper {
-        @apply px-10 mb-8 sm:mb-12 md:px-5;
+        @apply  mb-8 sm:px-10 sm:mb-12 md:px-5;
     }
 
     .product-container {
-        @apply bg-gray-light h-full flex flex-col place-items-center;
+        @apply bg-gray-light flex place-items-center sm:h-full sm:flex-col;
     }
 
     .product-img-container {
-        @apply border-green-light border-2 border-b-0 w-full h-3/5 bg-white;
+        @apply  border-2 border-r-0 w-full h-3/5 bg-white group-hover:border-green-light group-hover:border-b-0 sm:border-2 sm:border-b-0;
     }
 
     .product-img {
@@ -129,7 +125,7 @@
     }
 
     .product-price {
-        @apply text-green-pale;
+        @apply text-green-medium;
     }
 
     .product-rating {
@@ -137,7 +133,15 @@
     }
 
     .product-btn {
-        @apply text-center text-white uppercase px-3 py-1 m-auto bg-green-light w-2/3 md:w-5/12 lg:w-2/3;
+        @apply text-center uppercase px-3 py-1 m-auto w-2/3 md:w-5/12 lg:w-2/3;
+    }
+
+    .btn-white-green {
+        @apply text-green-dark bg-white border-green-dark border-2 hover:bg-green-light hover:border-green-light hover:text-white;
+    }
+
+    .btn-gray-green {
+        @apply px-5 py-2 bg-gray-medium hover:bg-green-light hover:text-white;
     }
 
 

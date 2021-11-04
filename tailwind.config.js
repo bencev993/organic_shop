@@ -17,9 +17,9 @@ module.exports = {
         },
         green: {
           light: '#76A713',
+          medium: '#016401',
           dark: '#1f5c0c',
-          hover: '#8BB538',
-          pale: '#94BA49'
+          hover: '#8BB538'
         },
         orange: {
           light: '#FD9F13',
@@ -37,6 +37,11 @@ module.exports = {
       },
       zIndex: {
         '-10': '-10',
+      },
+      gridTemplateColumns: {
+        'fit-12': 'repeat(auto-fit, 3rem)',
+        'fit-16': 'repeat(auto-fit, 4rem)',
+        'fit-40': 'repeat(auto-fit, 10rem)'
       },
     },
   },
