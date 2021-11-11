@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "tailwindcss -i src/app.css -o css/styles.css --postcss -w",
-    "prod": "NODE_ENV=production tailwindcss -i src/app.css -o css/styles.css --postcss -w"
+    "prod": "tailwindcss build -i src/app.css -o css/styles.css --postcss"
   },
   "author": "Bence V",
   "license": "ISC",
