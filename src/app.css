@@ -12,15 +12,19 @@
     }
 
     .nav-li {
-        @apply my-4 md:pr-2 md:my-auto;
+        @apply my-4 md:block md:pr-2 md:my-auto;
     }
 
     .logo-text {
-        @apply opacity-80 font-semibold italic text-2xl sm:text-3xl lg:text-4xl lg:tracking-widest xl:text-5xl;
+        @apply opacity-80 font-semibold italic text-6xl md:text-2xl lg:text-4xl lg:tracking-widest xl:text-5xl;
     }
 
     .nav-href {
         @apply px-10 py-2 rounded-lg hover:bg-green-light hover:text-white md:px-4;
+    }
+
+    .cart-item-count {
+        @apply absolute left-2 -top-2 px-1 bg-green-light text-white rounded-full;
     }
 
     .announcement {
@@ -28,7 +32,7 @@
     }
 
     .announcement-inner {
-        @apply mt-10 h-48 px-4 md:h-64 md:flex-1 2xl:h-72;
+        @apply mt-10 h-48 py-8 sm:py-4 md:px-4 md:h-64 md:flex-1 2xl:h-72;
     }
 
     .announcement-item {
@@ -44,7 +48,7 @@
     }
 
     .announcement-btn {
-        @apply text-sm px-2 py-1 text-center bg-white border-2 hover:bg-orange-500 hover:text-white sm:text-base sm:w-3/4 md:w-1/2 md:px-4 md:py-2 lg:w-3/4;
+        @apply hidden text-sm px-2 py-1 text-center bg-white border-2 hover:bg-orange-500 hover:text-white md:text-base md:block md:w-1/2 md:px-4 md:py-2 lg:w-3/4;
     }
 
     .announcement-img-container {
@@ -57,7 +61,7 @@
 
 
     .about {
-        @apply mt-12 h-full -mx-4 mb-20 sm:-mx-20 md:mx-auto md:my-20 lg:h-screen lg:mb-0;
+        @apply mt-12 h-full -mx-4 mb-20 md:mx-auto md:my-20 lg:h-screen lg:mb-0;
     }
 
     .about-inner-left {
@@ -197,20 +201,48 @@
         @apply flex flex-col h-full justify-evenly px-3 md:px-0 md:flex-1;
     }
 
+    .newsletter-heading {
+        @apply font-semibold text-white text-lg tracking-widest lg:text-4xl;
+    }
+
+    .newsletter-input {
+        @apply w-full bg-green-light placeholder-white text-white border-b sm:w-8/12 lg:pl-5 focus:bg-white focus:text-black focus:outline-none;
+    }
+
     .subscribe-btn {
         @apply px-3 py-1 bg-orange-500 text-white hover:opacity-90 lg:w-3/12;
     }
 
     .newsletter-img-container {
-        @apply w-full h-56 justify-end flex-1 p-4 hidden sm:flex md:-mr-40 md:-my-16 lg:h-80;
+        @apply w-full h-56 justify-end flex-1 p-4 hidden sm:flex md:-mr-32 md:-my-16 lg:h-80;
     }
 
     .newsletter-img {
         @apply w-full;
     }
 
+    .footer-heading {
+        @apply px-4 py-10 mt-10 text-2xl font-semibold italic lg:mt-0;
+    }
+
+    .footer-li {
+        @apply py-1;
+    }
+
+    .footer-href {
+        @apply px-4 py-2;
+    }
+
     .bottom-nav-btn {
-        @apply w-full bg-green-light text-center z-10 text-white py-1 rounded-sm ring-green-dark ring-1;
+        @apply w-full bg-green-light text-center z-10 text-white py-1 rounded-sm outline-none ring-green-dark ring-1;
+    }
+
+    .search-container {
+        @apply h-screen w-full bg-black bg-opacity-80 fixed flex flex-col place-content-center items-center top-0 left-0 z-20;
+    }
+
+    .search-button {
+        @apply px-3 py-1 rounded-r-xl bg-green-light text-white hover:opacity-90 md:py-4 lg:w-3/12;
     }
 
 }
