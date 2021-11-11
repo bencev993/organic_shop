@@ -17,8 +17,8 @@ searchContainer.addEventListener('click', (e) => {
 })
 
 window.addEventListener('keydown', (e) => {
-    if(e.key == 'Escape' && toggleS) {
-        toggleSearch()
+    if(e.key == 'Escape' && !toggleS) {
+        toggleSearch();
     }
 })
 
